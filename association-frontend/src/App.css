@@ -85,3 +85,11 @@ body {
   border-bottom: 2px aliceblue solid;
   padding: 5px;
 }
+
+.contact-form {
+  padding-top: 50px;
+  width: 33%;
+  margin: 0 auto;
+  color: aliceblue;
+  text-align: center;
+}
