@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
       object: req.body.object,
       content: req.body.content,
       association: req.body.association,
-      date: moment().format()
+      date: moment().format('MMMM Do YYYY, h:mm:ss a')
     }
   
     messages.push(message)
