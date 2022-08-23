@@ -1,4 +1,5 @@
 const associations = require('../associations')
+const messages = require('../messages')
 
 const verify = (req, res, next) => {
     const { slug } = req.params
@@ -13,8 +14,6 @@ const verify = (req, res, next) => {
       next()
     }
   }
-  
-  
   
   module.exports = {
     verify

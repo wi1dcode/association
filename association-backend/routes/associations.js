@@ -14,4 +14,7 @@ app.get('/:slug', verify, (req, res) => {
     res.json(req.association)
 })
 
+
+
+
 module.exports = app
