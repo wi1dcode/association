@@ -40,12 +40,14 @@ const Association = () => {
       {message.map((message) => {
         return (
             <>
+              {message.association === association.name && (
                 <div className="asso-mes-content">
                     <p className="m-object">Object: {message.object}</p>
                     <p className="m-content">Content: {message.content}</p>
                     <p className="m-date">{message.date}</p>
 
                 </div>
+              )}
             </>
         )
     }
