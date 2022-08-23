@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
 import "../App.css"
 
 const Home = () => {
@@ -21,13 +22,22 @@ useEffect(() => {
 
 return (
     <>
-        <ul>
+        <ul className="asso">
         {associations.map((associations) => {
           return (
             <>
-            <h1>{associations.name}</h1>
-            <h2>{associations.slogan}</h2>
-            <img src={associations.image} />
+            <div className="card-group">
+                <div className="card">
+                    <img src={associations.image} className="card-img-top" alt={associations.name}/>
+                    <div className="card-body">
+                    <h5><Link to={`/${associations.slug}`} className='card-title'>{associations.name}</Link></h5>
+                    <p className="card-text">{associations.description}</p>
+                    </div>
+                    <div className="footer">
+                    <p>{associations.slogan}</p>
+                    </div>
+                </div>
+                </div>
             </>
           )
         })}

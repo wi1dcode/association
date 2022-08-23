@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+body {
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-img-top {
+  width: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.asso {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.card-group {
+  text-align: center;
+  width: 29%;
+}
+
+.card {
+  width: 100%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.footer {
+  border-top: 2px rgb(210, 210, 210) solid;
+  color: gray;
+}
+
+.card-title {
+  text-transform: uppercase;
+}
+
+.collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.card-title {
+  text-decoration: none;
+  color: rgb(1, 1, 118);
+}
+
+.title {
   color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.asso-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.asso-img {
+  width: 250px;
+  background-color: aliceblue;
+}
+
+.slogan {
+  color: aliceblue;
+}
+
+.asso-desc {
+  color: white;
+  width: 33%;
+  text-align: center;
+  margin-top: 20px;
 }
