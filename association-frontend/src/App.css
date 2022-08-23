@@ -74,3 +74,14 @@ body {
   text-align: center;
   margin-top: 20px;
 }
+
+.m-object {
+  color: white;
+}
+
+.asso-mes-content {
+  text-align: center;
+  color: aliceblue;
+  border-bottom: 2px aliceblue solid;
+  padding: 5px;
+}
